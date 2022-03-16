@@ -30,6 +30,9 @@ Option Explicit
 
 
 Public Function request(ByVal sURL As String, Optional ByVal typeRequest As String = "GET") As String
+    ' Parameters:
+    ' sURL - String - url to website
+    ' typeRequest - Optional - String - type of request: GET, POST, OPTIONS and other.
     Dim oXMLHTTP
     On Error Resume Next
     Set oXMLHTTP = CreateObject("MSXML2.XMLHTTP")
