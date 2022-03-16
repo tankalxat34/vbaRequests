@@ -11,3 +11,13 @@ The simple module for making requests to websites
 2. Open your Microsoft Excel Book and in window `"Project - VBAProject"` click on free place and than *"Import file"*.
 3. Choice the downloaded file.
 4. Enjoy.
+
+# Example
+This code will show you your IP address
+```vb
+Sub helloworld()
+    Dim userIP As String
+    userIP = vbaRequests.request("https://ifconfig.me/ip")
+    MsgBox userIP
+End Sub
+```
