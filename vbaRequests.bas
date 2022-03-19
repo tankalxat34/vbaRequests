@@ -1,10 +1,9 @@
-Attribute VB_Name = "vbaRequests"
 Option Explicit
 
 '                       Module vbaRequests
-' The simple module for making requests to websites. Here is available support 
+' The simple module for making requests to websites. Here is available support
 '          of GET, POST, DELETE and other methods of requests.
-' 
+'
 '              tankalxat34 (Alexander Podstrechnyy)
 '            https://github.com/tankalxat34/vbaRequests
 '
@@ -31,21 +30,54 @@ Option Explicit
 ' OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ' SOFTWARE.
 
+Public Function createHeaders() As Object
+    ' create the default dictionary with headers
+    Dim headers As Object
+    Set headers = CreateObject("Scripting.Dictionary")
+    
+    headers.Add "User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36 Edg/99.0.1150.39"
+    headers.Add "Cache-Control", "max-age=0"
+    headers.Add "Accept-Encoding", "deflate"
+    headers.Add "Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+    
+    Set createHeaders = headers
+End Function
 
-Public Function request(ByVal sURL As String, Optional ByVal typeRequest As String = "GET") As String
+
+Public Function request(ByVal sURL As String, headersDictionary As Object, Optional ByVal username As String, Optional ByVal password As String, Optional ByVal typeRequest As String = "GET") As String
     ' Parameters:
-    ' sURL - String - url to website
-    ' typeRequest - Optional - String - type of request: GET, POST, OPTIONS and other.
+    '|     Parameter     |            Type             |                                  Description                                  |
+    '|-------------------|-----------------------------|-------------------------------------------------------------------------------|
+    '| sURL              | String                      | The string URL of web-site                                                    |
+    '| headersDictionary | Object Scripting.Dictionary | A dictionary containing headers for making a successful request to a website. |
+    '|                   |                             | You can set the headers yourself, or use the "createHeaders"                  |
+    '|                   |                             | function to automatically apply default headers to your request               |
+    '| username          | String                      | String containing your username for login in website                          |
+    '| password          | String                      | String containing your password or token for login in website                 |
+
     Dim oXMLHTTP
+    Dim element As Variant
+    
     On Error Resume Next
     Set oXMLHTTP = CreateObject("MSXML2.XMLHTTP")
     With oXMLHTTP
         .Open typeRequest, sURL, False
-        .SetRequestHeader "Cache-Control", "max-age=0"
-        .SetRequestHeader "User-Agent", "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.41 Safari/537.36 OPR/35.0.2066.10 (Edition beta)"
-        .SetRequestHeader "Accept-Encoding", "deflate"
-        .SetRequestHeader "Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
+        
+        ' set up all headers from headersDictionary
+        For Each element In headersDictionary.Keys
+            .SetRequestHeader element, headersDictionary.Item(element)
+        Next
+        
+        ' check to available to set up username and password
+        If username <> "" And password <> "" Then
+            .SetRequestHeader "php-auth-user", username
+            .SetRequestHeader "php-auth-pw", password
+        End If
+        
+        ' send the request
         .send
+        
+        ' return request
         request = .responseText
     End With
     Set oXMLHTTP = Nothing
