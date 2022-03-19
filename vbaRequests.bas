@@ -3,10 +3,10 @@ Option Explicit
 
 '                       Module vbaRequests
 ' The simple module for making requests to websites. Here is available support 
-'         of GET, PUT, DELETE and other methods of requests.
+'          of GET, PUT, DELETE and other methods of requests.
 ' 
-'             Author: tankalxat34 (Alexander Podstrechnyy)
-'               https://github.com/tankalxat34/vbaRequests
+'              tankalxat34 (Alexander Podstrechnyy)
+'            https://github.com/tankalxat34/vbaRequests
 '
 ' License:
 ' MIT License
