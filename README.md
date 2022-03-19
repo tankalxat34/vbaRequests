@@ -5,6 +5,8 @@
 
 The simple module for making requests to websites
 
+Author: **[tankalxat34](https://github.com/tankalxat34)**
+
 # Installation
 [![test](https://img.shields.io/badge/-download-brightgreen?style=for-the-badge)](https://github.com/tankalxat34/vbaRequests/raw/main/vbaRequests.bas)
 
