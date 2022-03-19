@@ -1,6 +1,7 @@
 # vbaRequests
 ![GitHub top language](https://img.shields.io/github/languages/top/tankalxat34/vbaRequests)
 ![skill](https://img.shields.io/badge/Microsoft%20Excel%20VBA-107C41?logo=microsoft&logoColor=white)
+![GitHub](https://img.shields.io/github/license/tankalxat34/vbaRequests?logo=github&logoColor=white)
 
 The simple module for making requests to websites
 
