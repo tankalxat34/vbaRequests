@@ -25,3 +25,13 @@ Sub helloworld()
     MsgBox userIP
 End Sub
 ```
+
+## Response from GitHub
+```vb
+Sub githubResponse()
+    Debug.Print vbaRequests.request("https://api.github.com/users/tankalxat34", _
+            vbaRequests.createHeaders(), _
+            "tankalxat34", "YOUR_TOKEN", _
+            "GET")
+End Sub
+```
