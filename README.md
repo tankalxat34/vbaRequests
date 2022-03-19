@@ -15,6 +15,16 @@ Author: **[tankalxat34](https://github.com/tankalxat34)**
 3. Choice the downloaded file.
 4. Enjoy.
 
+# Information about "request" public function
+
+|     Parameter     |            Type             |                                  Description                                  |
+|-------------------|-----------------------------|-------------------------------------------------------------------------------|
+| sURL              | String                      | The string URL of web-site                                                    |
+| headersDictionary | Object Scripting.Dictionary | A dictionary containing headers for making a successful request to a website. You can set the headers yourself, or use the "createHeaders" function to automatically apply default headers to your request                                             |
+| username          | String                      | String containing your username for login in website                          |
+| password          | String                      | String containing your password or token for login in website                 |
+| typeRequest       | String                      | String of type for request: "GET", "POST", "PUT" and other types              |
+
 # Example
 ## Get your own IP
 This code will show you your IP address
