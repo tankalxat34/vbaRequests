@@ -31,7 +31,7 @@ Option Explicit
 ' OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ' SOFTWARE.
 
-Public Function createHeaders() As Object
+Public Function createHeaders(Optional headersDictionary As Object) As Object
     ' create the default dictionary with headers
     Dim headers As Object
     Set headers = CreateObject("Scripting.Dictionary")
@@ -41,6 +41,12 @@ Public Function createHeaders() As Object
     headers.Add "Accept-Encoding", "deflate"
     headers.Add "Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
     
+    ' add custom headers to default headers
+    Dim Key As Variant
+    For Each Key In headersDictionary.Keys
+        headers.Add Key, headersDictionary.Item(Key)
+    Next
+
     Set createHeaders = headers
 End Function
 
