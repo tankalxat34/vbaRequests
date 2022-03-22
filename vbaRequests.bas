@@ -51,7 +51,7 @@ Public Function createHeaders(Optional headersDictionary As Object) As Object
 End Function
 
 
-Public Function request(ByVal sURL As String, headersDictionary As Object, Optional ByVal username As String, Optional ByVal password As String, Optional ByVal typeRequest As String = "GET") As String
+    Public Function request(ByVal sURL As String, headersDictionary As Object, Optional ByVal typeRequest As String = "GET", Optional ByVal username As String, Optional ByVal password As String) As String
     ' Parameters:
 '    |     Parameter     |            Type             |                                  Description                                  |
 '    |-------------------|-----------------------------|-------------------------------------------------------------------------------|
