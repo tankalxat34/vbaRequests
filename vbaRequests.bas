@@ -42,25 +42,25 @@ Public Function createHeaders(Optional headersDictionary As Object) As Object
     headers.Add "Accept-Language", "ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4"
     
     ' add custom headers to default headers
-    Dim Key As Variant
-    For Each Key In headersDictionary.Keys
-        headers.Add Key, headersDictionary.Item(Key)
+    On Error Resume Next
+    Dim headerName As Variant
+    For Each headerName In headersDictionary.Keys
+        headers.Add headerName, headersDictionary.Item(headerName)
     Next
 
     Set createHeaders = headers
 End Function
 
 
-Public Function request(ByVal sURL As String, headersDictionary As Object, Optional ByVal typeRequest As String = "GET", Optional ByVal username As String, Optional ByVal password As String) As String
-    ' Parameters:
-'    |     Parameter     |            Type             |                                  Description                                  |
-'    |-------------------|-----------------------------|-------------------------------------------------------------------------------|
-'    | sURL              | String                      | The string URL of web-site                                                    |
-'    | headersDictionary | Object Scripting.Dictionary | A dictionary containing headers for making a successful request to a website. |
-'    |                   |                             | You can set the headers yourself, or use the "createHeaders"                  |
-'    |                   |                             | function to automatically apply default headers to your request               |
-'    | username          | String                      | String containing your username for login in website                          |
-'    | password          | String                      | String containing your password or token for login in website                 |
+Public Function request(ByVal sURL As String, Optional headersDictionary As Object, Optional ByVal typeRequest As String = "GET", Optional ByVal username As String, Optional ByVal password As String) As String
+    '|     Parameter     |            Type             |                                  Description                                  |
+    '|-------------------|-----------------------------|-------------------------------------------------------------------------------|
+    '| sURL              | String                      | The string URL of web-site                                                    |
+    '| headersDictionary | Object Scripting.Dictionary | A dictionary containing headers for making a successful request to a website. |
+    '|                   |                             | You can set the headers yourself, or use the "createHeaders"                  |
+    '|                   |                             | function to automatically apply default headers to your request               |
+    '| username          | String                      | String containing your username for login in website                          |
+    '| password          | String                      | String containing your password or token for login in website                 |
 
     Dim oXMLHTTP
     Dim element As Variant
