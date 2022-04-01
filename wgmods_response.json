@@ -1,0 +1,177 @@
+{
+    "author_name": null,
+    "change_log": [{
+        "body": "-",
+        "date": "",
+        "version": "1.3.0.1"
+    }],
+    "cover": "https://wgmods.net/media/shot_826_xPCxlbL.jpg",
+    "created_at": "2018-11-19T16:45:39.222307Z",
+    "downloads": 1280,
+    "id": 2548,
+    "is_following": false,
+    "is_reported": false,
+    "localizations": [{
+        "lang": {
+            "id": 1,
+            "code": "en",
+            "title": "English"
+        },
+        "title": "Centurion 5/1 remodel Chieftain Mk. 6",
+        "description": "<p>This mod changes the standard model of the tank Centurion 5/1 RAAC on the model Chieftain Mk. 6. &nbsp; &nbsp; &nbsp;UPD: мод работает на всех версиях игры, в том числе и на тестовом сервере.</p>",
+        "installation_guide": "<p>The downloaded file Centurion_RAAC_remodel_tankalxat34.wotmod the mods folder with the latest version of the game.</p>"
+    }, {
+        "lang": {
+            "id": 2,
+            "code": "ru",
+            "title": "Русский"
+        },
+        "title": "Centurion 5/1 remodel Chieftain Mk. 6",
+        "description": "<p>This mod changes the standard model of the tank Centurion 5/1 RAAC on the model Chieftain Mk. 6. &nbsp; UPD: мод работает на всех версиях игры, в том числе и на тестовом сервере.</p>",
+        "installation_guide": "<p>The downloaded file Centurion_RAAC_remodel_tankalxat34.wotmod the mods folder with the latest version of the game.</p>"
+    }],
+    "mark": "4.7",
+    "mark_votes_count": 30,
+    "owner": {
+        "pk": 40726,
+        "spa_id": 32416623,
+        "spa_username": "tankalxat34",
+        "username": "ru_32416623",
+        "realm": "ru",
+        "followed_mods": [67, 243, 409, 656, 996, 1170, 1366, 1495, 1556, 1557, 1855, 2460, 2548, 2575, 3848, 4161, 4673, 4684, 4726, 4822, 4895, 4963, 4979, 5119, 5121, 5122, 5157, 5160, 5309, 5368, 5393]
+    },
+    "qa_status": 0,
+    "rating": 1.43190371396018,
+    "screenshots": [{
+        "id": 7803,
+        "position": 0,
+        "source": "https://wgmods.net/media/shot_826_ygYqBzN.jpg",
+        "source_view_page": "/media/shot_826_ygYqBzN.jpg.412x218_q85_crop_detail_replace_alpha-white.jpg",
+        "source_full_size": "/media/shot_826_ygYqBzN.jpg.1600x0_q85_crop_detail_replace_alpha-white.jpg"
+    }, {
+        "id": 7802,
+        "position": 1,
+        "source": "https://wgmods.net/media/shot_827_1cDpWUF.jpg",
+        "source_view_page": "/media/shot_827_1cDpWUF.jpg.412x218_q85_crop_detail_replace_alpha-white.jpg",
+        "source_full_size": "/media/shot_827_1cDpWUF.jpg.1600x0_q85_crop_detail_replace_alpha-white.jpg"
+    }],
+    "supported_languages": [],
+    "tags": [16, 21, 20],
+    "updated_at": "2020-07-04T11:06:39.193045Z",
+    "user_vote": null,
+    "versions": [{
+        "id": 57946,
+        "version": "1.16.0.0",
+        "comment": "",
+        "created_at": "2022-03-11T17:21:57.386130Z",
+        "is_visible": true,
+        "status": 1,
+        "security_status": 1,
+        "game_short_title": "WoT",
+        "game_version": {
+            "id": 144,
+            "version": "1.16.0.0"
+        },
+        "version_file": "/media/mod_files/tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain.wotmod",
+        "version_file_original_name": "tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain.wotmod",
+        "version_file_size": 9394967,
+        "download_url": "https://modp.wgcdn.co/media/mod_files/tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain.wotmod",
+        "updated_at": "2022-03-12T06:27:22.536064Z",
+        "change_log": "Переименованы текстуры"
+    }, {
+        "id": 40978,
+        "version": "1.9.1.2",
+        "comment": "",
+        "created_at": "2020-07-10T06:12:05.206827Z",
+        "is_visible": true,
+        "status": 1,
+        "security_status": 0,
+        "game_short_title": "WoT",
+        "game_version": {
+            "id": 89,
+            "version": "1.9.1.2"
+        },
+        "version_file": "/media/mod_files/tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain_1911_B4cJjj3.wotmod",
+        "version_file_original_name": "tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain_1911.wotmod",
+        "version_file_size": 9394967,
+        "download_url": "https://modp.wgcdn.co/media/mod_files/tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain_1911_B4cJjj3.wotmod",
+        "updated_at": "2020-07-10T06:12:05.206861Z",
+        "change_log": ""
+    }, {
+        "id": 40688,
+        "version": "1.9.1.1",
+        "comment": "",
+        "created_at": "2020-07-04T08:30:40.133760Z",
+        "is_visible": true,
+        "status": 1,
+        "security_status": 0,
+        "game_short_title": "WoT",
+        "game_version": {
+            "id": 88,
+            "version": "1.9.1.1"
+        },
+        "version_file": "/media/mod_files/tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain_1911.wotmod",
+        "version_file_original_name": "tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain_1911.wotmod",
+        "version_file_size": 9394967,
+        "download_url": "https://modp.wgcdn.co/media/mod_files/tankalxat34_Centurion51_RAAC_remodel_Mk6_Chieftain_1911.wotmod",
+        "updated_at": "2020-07-04T11:06:39.226546Z",
+        "change_log": ""
+    }, {
+        "id": 22794,
+        "version": "1.5.1.3",
+        "comment": "",
+        "created_at": "2019-08-02T16:14:30.226978Z",
+        "is_visible": true,
+        "status": 1,
+        "security_status": 1,
+        "game_short_title": "WoT",
+        "game_version": {
+            "id": 59,
+            "version": "1.5.1.3"
+        },
+        "version_file": "/media/mod_files/Centurion_RAAC_remodel_tankalxat34_gK84clQ_tjprC6u_b0Y9azr.wotmod",
+        "version_file_original_name": "Centurion_RAAC_remodel_tankalxat34_gK84clQ_tjprC6u.wotmod",
+        "version_file_size": 9393527,
+        "download_url": "https://modp.wgcdn.co/media/mod_files/Centurion_RAAC_remodel_tankalxat34_gK84clQ_tjprC6u_b0Y9azr.wotmod",
+        "updated_at": "2019-08-02T16:15:32.730657Z",
+        "change_log": "1.5.1.3"
+    }, {
+        "id": 12718,
+        "version": "1.3.0.1",
+        "comment": "",
+        "created_at": "2018-12-16T19:26:32.229101Z",
+        "is_visible": true,
+        "status": 1,
+        "security_status": 1,
+        "game_short_title": "WoT",
+        "game_version": {
+            "id": 44,
+            "version": "1.3.0.1"
+        },
+        "version_file": "/media/mod_files/Centurion_RAAC_remodel_tankalxat34_gK84clQ_tjprC6u.wotmod",
+        "version_file_original_name": "Centurion_RAAC_remodel_tankalxat34_gK84clQ.wotmod",
+        "version_file_size": 9393527,
+        "download_url": "https://modp.wgcdn.co/media/mod_files/Centurion_RAAC_remodel_tankalxat34_gK84clQ_tjprC6u.wotmod",
+        "updated_at": "2018-12-16T19:27:34.423772Z",
+        "change_log": "-"
+    }, {
+        "id": 11608,
+        "version": "1.2.0.2",
+        "comment": "",
+        "created_at": "2018-11-28T06:19:24.495266Z",
+        "is_visible": true,
+        "status": 1,
+        "security_status": 1,
+        "game_short_title": "WoT",
+        "game_version": {
+            "id": 42,
+            "version": "1.2.0.2"
+        },
+        "version_file": "/media/mod_files/Centurion_RAAC_remodel_tankalxat34_gK84clQ.wotmod",
+        "version_file_original_name": "Centurion_RAAC_remodel_tankalxat34.wotmod",
+        "version_file_size": 9393527,
+        "download_url": "https://modp.wgcdn.co/media/mod_files/Centurion_RAAC_remodel_tankalxat34_gK84clQ.wotmod",
+        "updated_at": "2018-11-28T06:20:26.094583Z",
+        "change_log": ""
+    }]
+}
