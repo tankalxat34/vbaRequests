@@ -46,3 +46,18 @@ Sub githubResponse()
             "GET")
 End Sub
 ```
+
+## Response from [WGMods.net](https://wgmods.net)
+Code:
+```vb
+Sub get_response()
+    Dim headers As Object
+    Set headers = CreateObject("Scripting.Dictionary")
+    headers.Add "x-csrftoken", "NG97PVrI2orqk2UvBXyFB9GpHCNGHHFbbrRJogqbwFCEgTNoLsD383orPnQrq4wb"
+    headers.Add "x-requested-with", "XMLHttpRequest"
+
+    Debug.Print vbaRequests.request("https://wgmods.net/api/mods/2548/", vbaRequests.createHeaders(headers))
+End Sub
+```
+
+**[Response from server here](https://github.com/tankalxat34/vbaRequests/blob/examples/wgmods_response.json)**
